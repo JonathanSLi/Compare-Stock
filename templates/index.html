@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Compare Stocks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .move-left {
+            width: auto;
+            box-shadow: none;
+        }
+
+        .center-table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <!-- <link href="{{ url_for('static', filename='album.css') }}" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <main role="main">
+
+        <section class="jumbotron">
+            <div class="container">
+                <h1 class="jumbotron-heading text-center">Compare Stocks</h1>
+                <p class="lead text-muted text-center">Enter a list of companies separated by space (i.e aapl goog tsla)
+                </p>
+                <form method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" name="query" class="form-control">
+                    </div>
+                    <fieldset class="form-check">
+                        <div class="move-left">
+                            <div class="form-check">
+                                <input class="form-check-input" name="check" type="checkbox" id="gridRadios1"
+                                    value="forwardPE">
+                                <label class="form-check-label" for="gridRadios1">
+                                    forwardPE
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input move-left" name="check" type="checkbox" id="gridRadios2"
+                                    value="dividendRate">
+                                <label class="form-check-label" for="gridRadios2">
+                                    dividendRate
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="check" type="checkbox" id="gridRadios3"
+                                    value="pegRatio">
+                                <label class="form-check-label" for="gridRadios3">
+                                    PEGRatio (5 year exp)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="check" type="checkbox" id="gridRadios4"
+                                    value="fiftyTwoWeekHigh">
+                                <label class="form-check-label" for="gridRadios4">
+                                    fiftyTwoWeekHigh
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="check" type="checkbox" id="gridRadios4"
+                                    value="fullTimeEmployees">
+                                <label class="form-check-label" for="gridRadios5">
+                                    fullTimeEmployees
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="check" type="checkbox" id="gridRadios6"
+                                    value="regularMarketPrice">
+                                <label class="form-check-label" for="gridRadios5">
+                                    regularMarketPrice
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="check" type="checkbox" id="gridRadios6"
+                                    value="threeYearAverageReturn">
+                                <label class="form-check-label" for="gridRadios5">
+                                    threeYearAverageReturn
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <p class="text-center">
+                        <button type="submit" name="submit" value="search" class="btn btn-primary my-2">Search</button>
+                    </p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

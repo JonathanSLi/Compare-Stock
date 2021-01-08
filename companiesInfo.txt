@@ -1,0 +1,4 @@
+COMPANIES                FORWARDPE                
+Apple Inc.               30.027521                
+Alphabet Inc.            29.160547                
+Tesla, Inc.              208.70587                
