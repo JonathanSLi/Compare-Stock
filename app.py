@@ -40,3 +40,6 @@ def table():
         i+=1 
     companiesInfo.clear()
     return render_template('tables.html', options = option, companiesInfo = cInfo)
+
+if __name__ == '__main__':
+    app.run()
